@@ -1,8 +1,9 @@
 # R3F React-Three-Fiber Starter
 
-A simple template to use for quickly generating react-three-fiber projects.
+Sandon's simple template to use for generating react-three-fiber projects.
+Includes ability to animate and style quick with tailwind
 
-Stack:
+Packages and Stack:
 
 - react-three-fiber
 - react-three/drei
@@ -10,17 +11,17 @@ Stack:
 - Three.js
 - Vite
 - Tailwind
-- Typescript
+- TypeScript
 
 ### Getting Started:
 
-1. Clone this repository via:
-   `git clone`
-2. Remove the git file via:
-   `rm -rf .git`
-3. Create your own git file via:
-   ` git init`
-4. Install dependencies via:
-   `npm install`
-5. Run the development server:
-   `npm run dev`
+Feel free to 'use this template' via github to create a new repository with this starter code.
+
+1. Install dependencies via:
+   ```
+   npm install
+   ```
+2. Run the development server:
+   ```
+   npm run dev
+   ```

@@ -1,14 +1,30 @@
 import { Canvas, useFrame } from "@react-three/fiber";
 import { useSpring, a, config } from "@react-spring/three";
-import { useRef, useState } from "react";
+import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
+import { useThree } from "@react-three/fiber";
+import { useEffect, useRef, useState } from "react";
 import { Mesh } from "three";
-import "./App.css";
+
+const CameraController = () => {
+  const { camera, gl } = useThree();
+
+  useEffect(() => {
+    const controls = new OrbitControls(camera, gl.domElement);
+
+    controls.minDistance = 3;
+    controls.maxDistance = 20;
+    return () => {
+      controls.dispose();
+    };
+  }, [camera, gl]);
+  return null;
+};
 
 const Box = () => {
   const myMesh = useRef<Mesh>(null);
   const [active, setActive] = useState(false);
 
-  const springs = useSpring({ scale: active ? 1.5 : 1 });
+  // const springs = useSpring({ scale: active ? 1.5 : 1 });
   const { scale } = useSpring({
     scale: active ? 1.5 : 1,
     config: config.wobbly,
@@ -32,6 +48,7 @@ const Box = () => {
 const ThreeScene = () => {
   return (
     <Canvas>
+      <CameraController />
       <ambientLight />
       <pointLight position={[5, 5, 5]} />
       <Box />
@@ -41,7 +58,7 @@ const ThreeScene = () => {
 
 const App = () => {
   return (
-    <div className="App h-screen">
+    <div className="h-screen">
       <ThreeScene />
     </div>
   );
