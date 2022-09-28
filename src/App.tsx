@@ -1,5 +1,5 @@
 import { Canvas, useFrame } from "@react-three/fiber";
-import { useSpring, animated, config } from "@react-spring/three";
+import { useSpring, a, config } from "@react-spring/three";
 import { useRef, useState } from "react";
 import { Mesh } from "three";
 import "./App.css";
@@ -22,14 +22,10 @@ const Box = () => {
   });
 
   return (
-    <animated.mesh
-      scale={scale}
-      onClick={() => setActive(!active)}
-      ref={myMesh}
-    >
+    <a.mesh scale={scale} onClick={() => setActive(!active)} ref={myMesh}>
       <boxGeometry />
       <meshPhongMaterial color="royalblue" />
-    </animated.mesh>
+    </a.mesh>
   );
 };
 
@@ -43,12 +39,12 @@ const ThreeScene = () => {
   );
 };
 
-function App() {
+const App = () => {
   return (
     <div className="App h-screen">
       <ThreeScene />
     </div>
   );
-}
+};
 
 export default App;
