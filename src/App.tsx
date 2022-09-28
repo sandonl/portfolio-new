@@ -1,24 +1,8 @@
+import { a, config, useSpring } from "@react-spring/three";
+import { OrbitControls } from "@react-three/drei";
 import { Canvas, useFrame } from "@react-three/fiber";
-import { useSpring, a, config } from "@react-spring/three";
-import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
-import { useThree } from "@react-three/fiber";
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import { Mesh } from "three";
-
-const CameraController = () => {
-  const { camera, gl } = useThree();
-
-  useEffect(() => {
-    const controls = new OrbitControls(camera, gl.domElement);
-
-    controls.minDistance = 3;
-    controls.maxDistance = 20;
-    return () => {
-      controls.dispose();
-    };
-  }, [camera, gl]);
-  return null;
-};
 
 const Box = () => {
   const myMesh = useRef<Mesh>(null);
@@ -48,7 +32,7 @@ const Box = () => {
 const ThreeScene = () => {
   return (
     <Canvas>
-      <CameraController />
+      <OrbitControls />
       <ambientLight />
       <pointLight position={[5, 5, 5]} />
       <Box />
