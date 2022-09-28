@@ -6,7 +6,7 @@ Stack:
 
 - react-three-fiber
 - react-three/drei
-- react-three/spring three
+- react-three/spring
 - Three.js
 - Vite
 - Tailwind
