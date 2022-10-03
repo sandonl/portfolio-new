@@ -16,8 +16,8 @@ const Plane = (props: PlaneProps) => {
     // @ts-ignore
     <mesh receiveShadow ref={ref}>
       <planeGeometry args={[25, 25]} />
-      {/* <meshLambertMaterial color="royalBlue" /> */}
-      <meshLambertMaterial transparent={true} opacity={0} />
+      <meshLambertMaterial color="royalBlue" />
+      {/* <meshLambertMaterial transparent={true} opacity={0} /> */}
     </mesh>
   );
 };
@@ -44,7 +44,7 @@ const Borders = () => {
       {/* Back Plane */}
       <Plane rotation={[Math.PI * 2, 0, 0]} position={[0, 0, -2]} />
       {/* Front Plane */}
-      <Plane rotation={[Math.PI, 0, 0]} position={[0, 0, 2]} />
+      <Plane rotation={[Math.PI, 0, 0]} position={[0, 0, 1]} />
     </>
   );
 };
