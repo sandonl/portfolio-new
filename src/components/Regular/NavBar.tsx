@@ -1,8 +1,15 @@
+import { motion } from "framer-motion";
+
 interface NavbarProps {}
 
 const NavBar = ({}: NavbarProps) => {
   return (
-    <div className="absolute z-20 box-border flex h-20 w-full items-center justify-between px-32 text-xl text-black">
+    <motion.div
+      initial={{ y: -20, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: 0.7 }}
+      className="absolute z-20 box-border flex h-20 w-full items-center justify-between px-32 text-xl text-black"
+    >
       <a
         className="px-6 py-4 font-semibold transition-colors hover:text-rose-100"
         href="/"
@@ -39,7 +46,7 @@ const NavBar = ({}: NavbarProps) => {
           Twitter
         </a>
       </div>
-    </div>
+    </motion.div>
   );
 };
 export default NavBar;

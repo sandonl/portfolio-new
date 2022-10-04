@@ -2,7 +2,7 @@ export const projects = [
   {
     title: "Munjang",
     description:
-      "A full stack, spaced repetition system (SRS) web application that enables users to learn Korean through daily reviews and user- made flashcards. ",
+      "A full stack, spaced repetition system (SRS) web application that enables users to learn Korean through daily reviews and user-made flashcards. ",
     tags: ["React", "TypeScript", "tRPC", "Tailwind", "Prisma"],
     source: "https://github.com/sandonl/munjang",
     visit: "https://munjanglearn.vercel.app/",
@@ -19,7 +19,7 @@ export const projects = [
     id: 1,
   },
   {
-    title: "SelfCare",
+    title: "Self Care",
     description:
       "An android app that enhances personal self-care and utilises AR technology to engage the user with the outside world",
     tags: ["Kotlin", "Jetpack Compose", "ARCore", "Firebase"],
@@ -28,22 +28,13 @@ export const projects = [
     id: 2,
   },
   {
-    title: "SL Reddit",
-    description:
-      "A fullstack Reddit-inspired post sharing site that utilises React, ChakraUI, TypeScript, GraphQL and more",
-    tags: ["React", "GraphQL", "TypeScript", "PostgreSQL"],
-    source: "https://github.com/sandonl/sl-redditserver",
-    visit: "https://sandonl.com",
-    id: 3,
-  },
-  {
     title: "Raging Sea",
     description:
       "An example of using custom shaders with Three.js and lil-gui to tune parameters to create custom effects",
     tags: ["Three.js", "lil-gui", "GLSL"],
     source: "https://github.com/sandonl/threejs-raging-sea",
     visit: "https://sandonl-raging-sea.vercel.app/",
-    id: 4,
+    id: 3,
   },
   {
     title: "Journey Portal",
@@ -52,6 +43,15 @@ export const projects = [
     tags: ["Blender", "Three.js"],
     source: "https://github.com/sandonl/threejs-portal",
     visit: "https://threejs-sandonl-portal.vercel.app/",
+    id: 4,
+  },
+  {
+    title: "SL Reddit",
+    description:
+      "A fullstack Reddit-inspired post sharing site that utilises React, ChakraUI, TypeScript, GraphQL and more",
+    tags: ["React", "GraphQL", "TypeScript", "PostgreSQL"],
+    source: "https://github.com/sandonl/sl-redditserver",
+    visit: "https://sandonl.com",
     id: 5,
   },
 ];

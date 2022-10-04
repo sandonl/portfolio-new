@@ -8,10 +8,20 @@ const ProjectSection = () => {
         <div className="my-1 h-20 w-full">
           <div className=" text-3xl font-semibold"> Projects </div>
         </div>
-        {projects.map((project) => (
-          <Project project={project} />
+        {projects.map((project, id) => (
+          <Project project={project} key={id} />
         ))}
-        <div className="h-5" />
+
+        <div className="h-10 pb-2 text-xs ">
+          Inspired by
+          <a
+            href="https://twitter.com/0xca0a"
+            target="_blank"
+            className="px-1 text-xs"
+          >
+            0xca0a
+          </a>
+        </div>
       </div>
     </>
   );
