@@ -1,15 +1,19 @@
 import Project from "./Project";
+import { projects } from "../../constants/constants";
 
-interface ProjectSectionProps {}
-
-const ProjectSection = ({}: ProjectSectionProps) => {
+const ProjectSection = () => {
   return (
-    <div className="h-screen">
-      <div className="my-1 h-20 w-full p-4">
-        <div className="text-3xl font-semibold"> Projects </div>
+    <>
+      <div className="z-[30] h-screen px-36">
+        <div className="my-1 h-20 w-full">
+          <div className=" text-3xl font-semibold"> Projects </div>
+        </div>
+        {projects.map((project) => (
+          <Project project={project} />
+        ))}
+        <div className="h-5" />
       </div>
-      <Project />
-    </div>
+    </>
   );
 };
 export default ProjectSection;

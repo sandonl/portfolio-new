@@ -1,4 +1,4 @@
-import NavBar from "./components/NavBar";
+import NavBar from "./components/Regular/NavBar";
 import Hero from "./components/Regular/Hero";
 import ProjectSection from "./components/Regular/ProjectSection";
 import ThreeScene from "./components/ThreeScene";
@@ -6,14 +6,12 @@ import ThreeScene from "./components/ThreeScene";
 const App = () => (
   <>
     <div className="">
-      <div className="h-screen  font-medium">
+      <div className="h-screen font-medium">
         <NavBar />
         <Hero />
         <ThreeScene />
       </div>
-      <div className="h-screen">
-        <ProjectSection />
-      </div>
+      <ProjectSection />
     </div>
   </>
 );
