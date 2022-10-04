@@ -6,7 +6,12 @@
   margin: 0;
   padding: 0;
 }
-
-body {
-  @apply bg-rose-200;
+@layer base {
+  body {
+    @apply bg-rose-200;
+    font-family: "Clash Display", sans-serif;
+    cursor: url("https://github.com/chenglou/react-motion/raw/master/demos/demo8-draggable-list/cursor.png")
+        39 39,
+      auto;
+  }
 }

@@ -20,7 +20,7 @@ const Ball = ({}: BallProps) => {
       castShadow
       receiveShadow
       //   @ts-ignore
-      args={[null, null, 65]}
+      args={[null, null, 50]}
     >
       <sphereGeometry args={[0.5, 32, 32]} />
       <meshLambertMaterial color={ballColor} />

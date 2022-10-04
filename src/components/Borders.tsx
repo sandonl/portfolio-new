@@ -34,7 +34,7 @@ const Borders = () => {
       {/*  Left Plane  */}
       <Plane
         rotation={[0, Math.PI / 2, 0]}
-        position={[-viewport.width / 2 + 6, 0, 0]}
+        position={[-viewport.width / 2 + 5, 0, 0]}
       />
       {/* Right Plane */}
       <Plane
@@ -44,7 +44,7 @@ const Borders = () => {
       {/* Back Plane */}
       <Plane rotation={[Math.PI * 2, 0, 0]} position={[0, 0, -2]} />
       {/* Front Plane */}
-      <Plane rotation={[Math.PI, 0, 0]} position={[0, 0, 1]} />
+      <Plane rotation={[Math.PI, 0, 0]} position={[0, 0, 0]} />
     </>
   );
 };
