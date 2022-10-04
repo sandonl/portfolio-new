@@ -9,7 +9,7 @@ import Lights from "./Lights";
 import Mouse from "./Mouse";
 
 const ThreeScene = () => {
-  const { cameraPosition } = useControls({ cameraPosition: [0, 0, 4] });
+  // const { cameraPosition } = useControls({ cameraPosition: [0, 0, 4] });
 
   return (
     <div className="h-[calc(100%+10rem)] bg-rose-200">

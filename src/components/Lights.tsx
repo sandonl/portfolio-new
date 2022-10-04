@@ -4,10 +4,10 @@ import { useRef } from "react";
 import { DirectionalLightHelper } from "three";
 
 const Lights = () => {
-  const { lightPosition, directionalLight } = useControls({
-    lightPosition: [5, 5, 5],
-    directionalLight: [10, 10, -5],
-  });
+  // const { lightPosition, directionalLight } = useControls({
+  //   lightPosition: [5, 5, 5],
+  //   directionalLight: [10, 10, -5],
+  // });
 
   // const ref = useRef();
   // const direcLight = useHelper(ref, DirectionalLightHelper);
@@ -17,7 +17,7 @@ const Lights = () => {
       <ambientLight intensity={1.0} />
       <directionalLight
         // ref={ref as any}
-        position={directionalLight}
+        position={[10, 10, -5]}
         intensity={0.5}
       />
       <directionalLight
@@ -30,7 +30,7 @@ const Lights = () => {
         shadow-camera-top={10}
         shadow-camera-bottom={-10}
       />
-      <pointLight position={lightPosition} />
+      <pointLight position={[5, 5, 5]} />
     </>
   );
 };

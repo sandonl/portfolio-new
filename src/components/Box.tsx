@@ -7,7 +7,7 @@ import { Mesh } from "three";
 const Box = () => {
   const myMesh = useRef<Mesh>(null);
   const [active, setActive] = useState(false);
-  const { color } = useControls({ color: "royalblue" });
+  // const { color } = useControls({ color: "royalblue" });
 
   const { scale } = useSpring({
     scale: active ? 1.5 : 1,
@@ -24,7 +24,7 @@ const Box = () => {
   return (
     <a.mesh scale={scale} onClick={() => setActive(!active)} ref={myMesh}>
       <boxGeometry />
-      <meshPhongMaterial color={color} />
+      <meshPhongMaterial color={"royalBlue"} />
     </a.mesh>
   );
 };
