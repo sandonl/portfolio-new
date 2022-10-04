@@ -2,7 +2,7 @@ interface NavbarProps {}
 
 const NavBar = ({}: NavbarProps) => {
   return (
-    <div className="absolute z-20 flex h-20 w-screen items-center justify-between text-xl text-black ">
+    <div className="absolute z-20 box-border flex h-20 w-full items-center justify-between text-xl text-black">
       <div className="px-6 py-4 font-semibold"> Sandon Lai </div>
       <div className="p-4">
         <a href="https://github.com/sandonl" target="_blank" className="px-4">

@@ -7,7 +7,7 @@ interface BallProps {}
 
 const Ball = ({}: BallProps) => {
   const { viewport } = useThree();
-  const { ballColor } = useControls({ ballColor: "#d86666" });
+  const { ballColor } = useControls({ ballColor: "#f55d5d" });
   const [ref] = useSphere(() => ({
     mass: 100,
     position: [4 - Math.random() * 8, viewport.height, 0],
@@ -20,7 +20,7 @@ const Ball = ({}: BallProps) => {
       castShadow
       receiveShadow
       //   @ts-ignore
-      args={[null, null, 60]}
+      args={[null, null, 65]}
     >
       <sphereGeometry args={[0.5, 32, 32]} />
       <meshLambertMaterial color={ballColor} />

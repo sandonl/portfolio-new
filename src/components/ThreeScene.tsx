@@ -1,20 +1,21 @@
+import { Physics } from "@react-three/cannon";
 import { OrbitControls, PerspectiveCamera } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
-import { Physics } from "@react-three/cannon";
-import Borders from "./Borders";
-import Box from "./Box";
-import Lights from "./Lights";
-import Ball from "./Ball";
-import Mouse from "./Mouse";
 import { useControls } from "leva";
-import { Vector3 } from "three";
+import Ball from "./Ball";
+import Borders from "./Borders";
+import Effects from "./Effects";
+import Lights from "./Lights";
+import Mouse from "./Mouse";
 
 const ThreeScene = () => {
   const { cameraPosition } = useControls({ cameraPosition: [0, 0, 4] });
 
   return (
     <div className="h-screen bg-rose-200">
-      <Canvas>
+      <Canvas frameloop="demand">
+        <fog attach="fog" args={["red", 25, 35]} />
+
         <PerspectiveCamera makeDefault position={[0, 2, 4]} fov={75} />
         {/* <OrbitControls /> */}
         <Lights />
@@ -27,6 +28,7 @@ const ThreeScene = () => {
           <Ball />
           <Mouse />
         </Physics>
+        {/* <Effects /> */}
       </Canvas>
     </div>
   );
