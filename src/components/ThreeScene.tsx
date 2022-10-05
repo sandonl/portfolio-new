@@ -10,7 +10,7 @@ const ThreeScene = () => {
   // const { cameraPosition } = useControls({ cameraPosition: [0, 0, 4] });
 
   return (
-    <div className="h-[calc(100%+10rem)] bg-rose-200">
+    <div className="hidden h-[calc(100%+10rem)] bg-rose-200 md:block md:w-full">
       <Canvas frameloop="demand">
         <fog attach="fog" args={["red", 25, 35]} />
         <PerspectiveCamera makeDefault position={[0, 1, 4]} fov={80} />

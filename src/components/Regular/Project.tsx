@@ -11,19 +11,19 @@ interface ProjectProps {
 }
 
 const Project = (props: ProjectProps) => {
-  const { title, description, tags, source, visit, id } = props.project;
+  const { title, description, tags, source, visit } = props.project;
 
   return (
     <motion.div
       whileHover={{ scale: 1.03 }}
       transition={{ type: "spring" }}
-      className="mb-2 h-36 w-full border border-black p-4 drop-shadow-sm transition-colors hover:bg-rose-100"
+      className="mb-2 h-52 w-full cursor-pointer border border-black p-4 drop-shadow-sm transition-colors hover:bg-rose-100 md:h-36"
       onClick={() => window.open(`${visit}`, "_blank")?.focus()}
     >
       <div className="text-2xl font-semibold"> {title} </div>
       <div className="text-l py-2"> {description} </div>
-      <div className="flex justify-between py-4">
-        <div className="flex">
+      <div className="flex justify-between py-2">
+        <div className="hidden lg:flex">
           {tags.map((item, id) => (
             <div className=" pr-4" key={id}>
               {item}
