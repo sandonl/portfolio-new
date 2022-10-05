@@ -17,7 +17,7 @@ const Lights = () => {
       <ambientLight intensity={1.0} />
       <directionalLight
         // ref={ref as any}
-        position={[10, 8, 5]}
+        position={[10, 8, -5]}
         intensity={0.5}
       />
       <directionalLight

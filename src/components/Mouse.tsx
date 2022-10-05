@@ -10,7 +10,7 @@ const Mouse = ({}: MouseProps) => {
     api.position.set(
       (state.mouse.x * viewport.width) / 2,
       (state.mouse.y * viewport.height) / 2,
-      4.5
+      3.5
     )
   );
 };
