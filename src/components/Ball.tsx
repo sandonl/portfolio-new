@@ -12,7 +12,7 @@ const Ball = ({}: BallProps) => {
     mass: 100,
     position: [4 - Math.random() * 8, viewport.height, 0],
     args: [0.4],
-    sleepSpeedLimit: 1,
+    sleepSpeedLimit: 2,
   }));
 
   return (
@@ -21,7 +21,7 @@ const Ball = ({}: BallProps) => {
       castShadow
       receiveShadow
       //   @ts-ignore
-      args={[null, null, 80]}
+      args={[null, null, 75]}
     >
       <sphereGeometry args={[0.4, 32, 32]} />
       <meshLambertMaterial color={"#f55d5d"} />
