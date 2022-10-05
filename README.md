@@ -1,4 +1,12 @@
-# R3F React-Three-Fiber Starter
+# Sandon's New Portfolio
+
+View [LIVE](https://sandonl.vercel.app/)
+
+New portfolio revised by using R3F. Added animations via framer-motion and styling primarily done with Tailwind.
+
+Ballpit was inspired by [Paul Henschel](https://twitter.com/0xca0a)
+
+## Built using R3F-starter-vite
 
 Sandon's simple template to use for generating react-three-fiber projects.
 Includes ability to animate and style quick with tailwind

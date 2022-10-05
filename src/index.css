@@ -10,6 +10,6 @@
   body {
     @apply bg-rose-200;
     font-family: "Clash Display", sans-serif;
-    cursor: url("public/cursor.png") 15 15, auto;
+    cursor: url("cursor.png") 15 15, auto;
   }
 }
