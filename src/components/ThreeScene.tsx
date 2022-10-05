@@ -1,5 +1,5 @@
 import { Physics } from "@react-three/cannon";
-import { PerspectiveCamera } from "@react-three/drei";
+import { Effects, PerspectiveCamera } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import Ball from "./Ball";
 import Borders from "./Borders";
@@ -26,7 +26,7 @@ const ThreeScene = () => {
             <Mouse />
           </group>
         </Physics>
-        {/* <Effects /> */}
+        {/* <Effects multisamping={8} renderIndex={1} /> */}
       </Canvas>
     </div>
   );

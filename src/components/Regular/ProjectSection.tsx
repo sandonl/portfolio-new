@@ -1,10 +1,16 @@
 import Project from "./Project";
 import { projects } from "../../constants/constants";
+import { motion } from "framer-motion";
 
 const ProjectSection = () => {
   return (
     <>
-      <div className="z-[30] h-screen px-36">
+      <motion.div
+        initial={{ x: -50 }}
+        whileInView={{ x: 0 }}
+        transition={{ duration: 0.7, type: "spring" }}
+        className="z-[30] h-screen px-36"
+      >
         <div className="my-1 h-20 w-full">
           <div className=" text-3xl font-semibold"> Projects </div>
         </div>
@@ -22,7 +28,7 @@ const ProjectSection = () => {
             0xca0a
           </a>
         </div>
-      </div>
+      </motion.div>
     </>
   );
 };

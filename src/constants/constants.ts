@@ -18,15 +18,7 @@ export const projects = [
     visit: "https://r3f-chair-sandonl.vercel.app/",
     id: 1,
   },
-  {
-    title: "Self Care",
-    description:
-      "An android app that enhances personal self-care and utilises AR technology to engage the user with the outside world",
-    tags: ["Kotlin", "Jetpack Compose", "ARCore", "Firebase"],
-    source: "https://github.com/sandonl/COMP90018-selfcare-app",
-    visit: "https://www.youtube.com/watch?v=GPYu5J2qS6I&t",
-    id: 2,
-  },
+
   {
     title: "Raging Sea",
     description:
@@ -34,7 +26,7 @@ export const projects = [
     tags: ["Three.js", "lil-gui", "GLSL"],
     source: "https://github.com/sandonl/threejs-raging-sea",
     visit: "https://sandonl-raging-sea.vercel.app/",
-    id: 3,
+    id: 2,
   },
   {
     title: "Journey Portal",
@@ -43,7 +35,7 @@ export const projects = [
     tags: ["Blender", "Three.js"],
     source: "https://github.com/sandonl/threejs-portal",
     visit: "https://threejs-sandonl-portal.vercel.app/",
-    id: 4,
+    id: 3,
   },
   {
     title: "SL Reddit",
@@ -52,6 +44,15 @@ export const projects = [
     tags: ["React", "GraphQL", "TypeScript", "PostgreSQL"],
     source: "https://github.com/sandonl/sl-redditserver",
     visit: "https://sandonl.com",
+    id: 4,
+  },
+  {
+    title: "Self Care",
+    description:
+      "An android app that enhances personal self-care and utilises AR technology to engage the user with the outside world",
+    tags: ["Kotlin", "Jetpack Compose", "ARCore", "Firebase"],
+    source: "https://github.com/sandonl/COMP90018-selfcare-app",
+    visit: "https://www.youtube.com/watch?v=GPYu5J2qS6I&t",
     id: 5,
   },
 ];

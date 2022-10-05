@@ -5,10 +5,10 @@ interface HeroProps {}
 const Hero = ({}: HeroProps) => {
   return (
     <motion.div
-      initial={{ y: -20, opacity: 0 }}
+      initial={{ y: -50, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       whileHover={{ scale: 1.05 }}
-      transition={{ duration: 0.7, type: "spring" }}
+      transition={{ duration: 1.2, type: "spring" }}
       className="absolute flex h-screen w-[50vw] flex-col justify-center p-32"
     >
       <div className="text-5xl font-bold">Hi, I'm Sandon</div>
