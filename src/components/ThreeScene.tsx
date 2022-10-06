@@ -1,6 +1,7 @@
-import { Physics } from "@react-three/cannon";
-import { Effects, PerspectiveCamera } from "@react-three/drei";
+import { Debug, Physics } from "@react-three/cannon";
+import { Effects, OrbitControls, PerspectiveCamera } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
+import { Suspense } from "react";
 import Ball from "./Ball";
 import Borders from "./Borders";
 import Lights from "./Lights";
@@ -13,6 +14,7 @@ const ThreeScene = () => {
     <div className="hidden h-[calc(100%+10rem)] bg-rose-200 md:block md:w-full">
       <Canvas frameloop="demand">
         <fog attach="fog" args={["red", 25, 35]} />
+        {/* 4 distance */}
         <PerspectiveCamera makeDefault position={[0, 1, 4]} fov={80} />
         {/* <OrbitControls /> */}
         <Lights />
@@ -22,9 +24,7 @@ const ThreeScene = () => {
         >
           <Borders />
           <Ball />
-          <group position={[0, 0, -5]}>
-            <Mouse />
-          </group>
+          <Mouse />
         </Physics>
         {/* <Effects multisamping={8} renderIndex={1} /> */}
       </Canvas>

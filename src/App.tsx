@@ -1,11 +1,11 @@
-import NavBar from "./components/Regular/NavBar";
 import Hero from "./components/Regular/Hero";
+import NavBar from "./components/Regular/NavBar";
 import ProjectSection from "./components/Regular/ProjectSection";
 import ThreeScene from "./components/ThreeScene";
 
 const App = () => (
   <>
-    <div className="">
+    <div>
       <div className="h-screen font-medium">
         <NavBar />
         <Hero />

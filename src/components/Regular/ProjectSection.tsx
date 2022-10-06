@@ -1,6 +1,5 @@
-import Project from "./Project";
 import { projects } from "../../constants/constants";
-import { motion } from "framer-motion";
+import Project from "./Project";
 
 const ProjectSection = () => {
   return (
