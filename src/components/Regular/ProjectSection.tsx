@@ -5,12 +5,7 @@ import { motion } from "framer-motion";
 const ProjectSection = () => {
   return (
     <>
-      <motion.div
-        initial={{ y: -20, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 2, type: "spring" }}
-        className="z-[30] h-screen px-3 md:px-36"
-      >
+      <div className="z-[30] h-screen px-3 md:px-36">
         <div className="my-1 h-20 w-full">
           <div className=" text-3xl font-semibold"> Projects </div>
         </div>
@@ -28,7 +23,7 @@ const ProjectSection = () => {
             0xca0a
           </a>
         </div>
-      </motion.div>
+      </div>
     </>
   );
 };
