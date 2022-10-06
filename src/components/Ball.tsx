@@ -1,5 +1,5 @@
 import { useSphere } from "@react-three/cannon";
-import { useThree } from "@react-three/fiber";
+import { useFrame, useThree } from "@react-three/fiber";
 import { BufferGeometry, InstancedMesh, Material } from "three";
 import { useControls } from "leva";
 
@@ -8,12 +8,14 @@ interface BallProps {}
 const Ball = ({}: BallProps) => {
   const { viewport } = useThree();
   // const { ballColor } = useControls({ ballColor: "#f55d5d" });
-  const [ref] = useSphere(() => ({
+  const [ref, api] = useSphere(() => ({
     mass: 100,
     position: [4 - Math.random() * 8, viewport.height, 0],
     args: [0.4],
     sleepSpeedLimit: 2,
   }));
+
+  useFrame((state) => api.applyImpulse([0, 1, 0], [0, 10, 0]));
 
   return (
     <instancedMesh
