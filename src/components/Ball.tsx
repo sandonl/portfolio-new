@@ -15,7 +15,9 @@ const Ball = ({}: BallProps) => {
     sleepSpeedLimit: 2,
   }));
 
-  useFrame((state) => api.applyImpulse([0, 1, 0], [0, 10, 0]));
+  useFrame((state) =>
+    api.applyImpulse([0, viewport.height, 0], [0, viewport.height, 0])
+  );
 
   return (
     <instancedMesh
