@@ -10,11 +10,11 @@ const Hero = ({}: HeroProps) => {
         animate={{ y: 0, opacity: 1 }}
         whileHover={{ scale: 1.05 }}
         transition={{ duration: 0.5, type: "spring", damping: 12 }}
-        className="absolute flex h-screen max-w-lg flex-col justify-center p-12 md:w-[50vw] md:p-32"
+        className="absolute flex h-screen max-w-xl flex-col justify-center p-12 leading-relaxed md:w-[50vw] md:p-32"
       >
-        <div className="text-5xl font-bold">Hi, I'm Sandon</div>
-        <div className="text-2xl font-thin">
-          A developer originally from Melbourne. Currently living in Seoul
+        <div className="text-5xl font-bold">Hi! I'm Sandon</div>
+        <div className="text-2xl font-normal">
+          A developer originally from Melbourne. Currently living in Seoul.
         </div>
         <div className="py-2 md:hidden">
           For the full experience, try viewing on the web!

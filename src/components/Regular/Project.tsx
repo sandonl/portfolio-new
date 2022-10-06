@@ -22,7 +22,7 @@ const Project = (props: ProjectProps) => {
     >
       <div className="text-2xl font-semibold"> {title} </div>
       <div className="py-3 text-sm md:text-base"> {description} </div>
-      <div className="flex justify-between py-2">
+      <div className="bottom-1 flex justify-between">
         <div className="hidden lg:flex">
           {tags.map((item, id) => (
             <div className=" pr-4" key={id}>
