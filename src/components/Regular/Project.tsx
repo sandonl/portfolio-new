@@ -17,12 +17,12 @@ const Project = (props: ProjectProps) => {
     <motion.div
       whileHover={{ scale: 1.03 }}
       transition={{ type: "spring" }}
-      className="mb-2 h-44 w-full cursor-pointer border border-black p-4 drop-shadow-sm transition-colors hover:bg-rose-100 md:h-40"
+      className="mb-2 flex h-44 w-full cursor-pointer flex-col border border-black p-4 drop-shadow-sm transition-colors hover:bg-rose-100 md:h-40"
       onClick={() => window.open(`${visit}`, "_blank")?.focus()}
     >
       <div className="text-2xl font-semibold"> {title} </div>
-      <div className="py-3 text-sm md:text-base"> {description} </div>
-      <div className="bottom-1 flex justify-between">
+      <div className="flex-grow py-3 text-sm md:text-base"> {description} </div>
+      <div className=" flex justify-between">
         <div className="hidden lg:flex">
           {tags.map((item, id) => (
             <div className=" pr-4" key={id}>

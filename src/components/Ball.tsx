@@ -12,12 +12,12 @@ const Ball = ({}: BallProps) => {
     mass: 100,
     position: [4 - Math.random() * 8, viewport.height, 0],
     args: [0.4],
-    sleepSpeedLimit: 2,
+    sleepSpeedLimit: 3,
   }));
 
-  useFrame((state) =>
-    api.applyImpulse([0, viewport.height, 0], [0, viewport.height, 0])
-  );
+  // useFrame((state) =>
+  //   api.applyImpulse([0, viewport.height, 0], [0, viewport.height, 0])
+  // );
 
   return (
     <instancedMesh

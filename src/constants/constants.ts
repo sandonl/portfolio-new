@@ -3,7 +3,7 @@ export const projects = [
     title: "Munjang",
     description:
       "A full stack, spaced repetition system (SRS) web application that enables users to learn Korean through daily reviews and user-made flashcards",
-    tags: ["React", "TypeScript", "tRPC", "Tailwind", "Prisma"],
+    tags: ["React", "Next", "TypeScript", "tRPC", "Tailwind", "Prisma"],
     source: "https://github.com/sandonl/munjang",
     visit: "https://munjanglearn.vercel.app/",
     id: 0,
@@ -41,7 +41,7 @@ export const projects = [
     title: "SL Reddit",
     description:
       "A fullstack Reddit-inspired post sharing site that utilises React, ChakraUI, TypeScript, GraphQL and more",
-    tags: ["React", "GraphQL", "TypeScript", "PostgreSQL"],
+    tags: ["React", "Next", "GraphQL", "TypeScript", "PostgreSQL"],
     source: "https://github.com/sandonl/sl-redditserver",
     visit: "https://sandonl.com",
     id: 4,
@@ -50,7 +50,7 @@ export const projects = [
     title: "Former Portfolio",
     description:
       "My old portfolio that was used to display projects made throughout univeristy",
-    tags: ["Next", "React", "Styled Components"],
+    tags: ["React", "Next", "Styled Components"],
     source: "https://github.com/sandonl/portfolio",
     visit: "https://sandonl.netlify.app/",
     id: 5,
