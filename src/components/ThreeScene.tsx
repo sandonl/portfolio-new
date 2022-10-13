@@ -12,7 +12,7 @@ const ThreeScene = () => {
 
   return (
     <div className="hidden h-[calc(100%+10rem)] bg-rose-200 md:block md:w-full">
-      <Canvas>
+      <Canvas shadows>
         <fog attach="fog" args={["red", 25, 35]} />
         <PerspectiveCamera makeDefault position={[0, 1, 4]} fov={80} />
         {/* <OrbitControls /> */}

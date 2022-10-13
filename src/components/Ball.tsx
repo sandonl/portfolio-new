@@ -7,17 +7,13 @@ interface BallProps {}
 
 const Ball = ({}: BallProps) => {
   const { viewport } = useThree();
-  // const { ballColor } = useControls({ ballColor: "#f55d5d" });
-  const [ref, api] = useSphere(() => ({
-    mass: 100,
+  // const { ballColor } = useControls({ ballColor: "#ff5151" });
+  const [ref] = useSphere(() => ({
+    mass: 50,
     position: [4 - Math.random() * 8, viewport.height, 0],
     args: [0.4],
-    sleepSpeedLimit: 3,
+    sleepSpeedLimit: 5,
   }));
-
-  // useFrame((state) =>
-  //   api.applyImpulse([0, viewport.height, 0], [0, viewport.height, 0])
-  // );
 
   return (
     <instancedMesh
@@ -25,10 +21,10 @@ const Ball = ({}: BallProps) => {
       castShadow
       receiveShadow
       //   @ts-ignore
-      args={[null, null, 75]}
+      args={[null, null, 70]}
     >
       <sphereGeometry args={[0.4, 32, 32]} />
-      <meshLambertMaterial color={"#f55d5d"} />
+      <meshLambertMaterial color={"#ff5151"} />
     </instancedMesh>
   );
 };
