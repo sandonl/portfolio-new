@@ -43,7 +43,7 @@ export const projects = [
       "A fullstack Reddit-inspired post sharing site that utilises React, ChakraUI, TypeScript, GraphQL and more",
     tags: ["React", "Next", "GraphQL", "TypeScript", "PostgreSQL"],
     source: "https://github.com/sandonl/sl-redditserver",
-    visit: "https://sandonl.com",
+    visit: "https://github.com/sandonl/sl-redditserver",
     id: 4,
   },
   {

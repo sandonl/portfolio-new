@@ -13,7 +13,7 @@ const NavBar = ({}: NavbarProps) => {
       <motion.div
         initial={{ y: -20, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.5, type: "spring", damping: 12 }}
+        transition={{ delay: 0.3, duration: 0.5, type: "spring", damping: 12 }}
         className="absolute z-20 box-border flex h-20 w-full items-center justify-between px-3 text-xl text-black md:px-32"
       >
         <a

@@ -35,6 +35,7 @@ const Project = (props: ProjectProps) => {
             className="px-2 transition-colors hover:text-rose-300"
             href={visit}
             target="_blank"
+            onClick={(e) => e.stopPropagation()}
           >
             Visit
           </a>
@@ -42,6 +43,7 @@ const Project = (props: ProjectProps) => {
             className="px-2 transition-colors hover:text-rose-300"
             href={source}
             target="_blank"
+            onClick={(e) => e.stopPropagation()}
           >
             Source
           </a>
