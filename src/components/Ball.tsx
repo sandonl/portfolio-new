@@ -16,6 +16,7 @@ const Ball = ({}: BallProps) => {
   }));
 
   return (
+    // Better performance on the instanced meshes
     <instancedMesh
       ref={ref as React.Ref<InstancedMesh<BufferGeometry, Material>>}
       castShadow

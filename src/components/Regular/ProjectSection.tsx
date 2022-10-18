@@ -5,7 +5,7 @@ import { useEffect, useRef } from "react";
 
 const ProjectSection = () => {
   const ref = useRef(null);
-  const isInView = useInView(ref);
+  const isInView = useInView(ref, { once: true });
   const animation = useAnimation();
 
   useEffect(() => {
