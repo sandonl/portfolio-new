@@ -1,10 +1,37 @@
 import { projects } from "../../constants/constants";
 import Project from "./Project";
+import { motion, useAnimation, useInView } from "framer-motion";
+import { useEffect, useRef } from "react";
 
 const ProjectSection = () => {
+  const ref = useRef(null);
+  const isInView = useInView(ref);
+  const animation = useAnimation();
+
+  useEffect(() => {
+    if (isInView) {
+      animation.start({
+        x: 0,
+        opacity: 1,
+        transition: { type: "spring", duration: 1.7 },
+      });
+    }
+
+    if (!isInView) {
+      animation.start({
+        x: "-100vw",
+        opacity: 0,
+      });
+    }
+  }, [isInView]);
+
   return (
     <>
-      <div className="z-[30] h-screen px-3 md:px-36">
+      <motion.div
+        ref={ref}
+        animate={animation}
+        className="z-[30] h-screen px-3 md:px-36"
+      >
         <div className="my-1 h-20 w-full">
           <div className=" text-3xl font-semibold"> Projects </div>
         </div>
@@ -22,7 +49,7 @@ const ProjectSection = () => {
             0xca0a
           </a>
         </div>
-      </div>
+      </motion.div>
     </>
   );
 };
