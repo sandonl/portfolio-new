@@ -19,7 +19,7 @@ const Hero = ({}: HeroProps) => {
           }}
           className="text-5xl font-bold"
         >
-          Hi! I'm Sandon
+          Hi! I'm Sandon!
         </motion.div>
         <motion.div
           initial={{ y: -50, opacity: 0 }}
@@ -31,7 +31,7 @@ const Hero = ({}: HeroProps) => {
           }}
           className="text-2xl font-normal"
         >
-          A developer originally from Melbourne. Currently living in Seoul.
+          I'm a developer from Melbourne, Australia.
         </motion.div>
         <div className="py-2 md:hidden">
           For the full experience, try viewing on the web!
