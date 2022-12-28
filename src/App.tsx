@@ -11,17 +11,7 @@ const App = () => (
         <Hero />
         <ThreeScene />
       </div>
-      {/* <ProjectSection /> */}
-      <div className="h-4 px-2 pb-2 text-xs ">
-        Ballpit inspired by
-        <a
-          href="https://twitter.com/0xca0a"
-          target="_blank"
-          className="px-1 text-xs"
-        >
-          0xca0a
-        </a>
-      </div>
+      <ProjectSection />
     </div>
   </>
 );

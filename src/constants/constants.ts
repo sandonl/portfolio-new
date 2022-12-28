@@ -10,23 +10,13 @@ export const projects = [
   },
 
   {
-    title: "R3F Chair Display",
+    title: "Self Care",
     description:
-      "An example product page that utilises react-three-fiber to present a hypothetical chair product",
-    tags: ["Three.js", "React", "R3F", "React-Spring", "Vite"],
-    source: "https://github.com/sandonl/r3f-display",
-    visit: "https://r3f-chair-sandonl.vercel.app/",
+      "An android app that enhances personal self-care and utilises AR technology to engage the user with the outside world",
+    tags: ["Kotlin", "Jetpack Compose", "ARCore", "Firebase"],
+    source: "https://github.com/sandonl/COMP90018-selfcare-app",
+    visit: "https://www.youtube.com/watch?v=GPYu5J2qS6I&",
     id: 1,
-  },
-
-  {
-    title: "Raging Sea",
-    description:
-      "An example of using custom shaders with Three.js and lil-gui to tune parameters to create custom effects",
-    tags: ["Three.js", "lil-gui", "GLSL"],
-    source: "https://github.com/sandonl/threejs-raging-sea",
-    visit: "https://sandonl-raging-sea.vercel.app/",
-    id: 2,
   },
   {
     title: "Journey Portal",
@@ -35,7 +25,7 @@ export const projects = [
     tags: ["Blender", "Three.js"],
     source: "https://github.com/sandonl/threejs-portal",
     visit: "https://threejs-sandonl-portal.vercel.app/",
-    id: 3,
+    id: 2,
   },
   {
     title: "SL Reddit",
@@ -44,7 +34,7 @@ export const projects = [
     tags: ["React", "Next", "GraphQL", "TypeScript", "PostgreSQL"],
     source: "https://github.com/sandonl/sl-redditserver",
     visit: "http://sandonl.com/",
-    id: 4,
+    id: 3,
   },
   {
     title: "Former Portfolio",
@@ -53,6 +43,6 @@ export const projects = [
     tags: ["React", "Next", "Styled Components"],
     source: "https://github.com/sandonl/portfolio",
     visit: "https://sandonl.netlify.app/",
-    id: 5,
+    id: 4,
   },
 ];

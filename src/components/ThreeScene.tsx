@@ -10,7 +10,7 @@ const ThreeScene = () => {
   // const { cameraPosition } = useControls({ cameraPosition: [0, 0, 4] });
 
   return (
-    <div className="hidden h-[calc(100%)] bg-rose-200 md:block md:w-full">
+    <div className="hidden h-[calc(100%+10rem)] bg-rose-200 md:block md:w-full">
       <Canvas shadows>
         {/* <Stats /> */}
         <fog attach="fog" args={["red", 3, 10]} />
