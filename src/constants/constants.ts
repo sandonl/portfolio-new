@@ -28,16 +28,16 @@ export const projects = [
     id: 2,
   },
   {
-    title: "SL Reddit",
+    title: "SL Reddit (archived)",
     description:
       "A fullstack Reddit-inspired post sharing site that utilises React, ChakraUI, TypeScript, GraphQL and more",
     tags: ["React", "Next", "GraphQL", "TypeScript", "PostgreSQL"],
     source: "https://github.com/sandonl/sl-redditserver",
-    visit: "http://sandonl.com/",
+    visit: "https://github.com/sandonl/sl-redditserver",
     id: 3,
   },
   {
-    title: "Former Portfolio",
+    title: "Former Portfolio (archived)",
     description:
       "My old portfolio that was used to display projects made throughout univeristy",
     tags: ["React", "Next", "Styled Components"],
