@@ -27,11 +27,7 @@ const ProjectSection = () => {
 
   return (
     <>
-      <motion.div
-        ref={ref}
-        animate={animation}
-        className="z-[30] h-screen px-3 md:px-36"
-      >
+      <div className="z-[30] h-screen px-3 md:px-36">
         <div className="my-1 h-20 w-full">
           <div className=" text-3xl font-semibold"> Projects </div>
         </div>
@@ -49,7 +45,7 @@ const ProjectSection = () => {
             0xca0a
           </a>
         </div>
-      </motion.div>
+      </div>
     </>
   );
 };
