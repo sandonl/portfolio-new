@@ -32,7 +32,7 @@ const Hero = ({}: HeroProps) => {
           className="py-2 text-2xl font-normal"
         >
           I'm a developer from Melbourne, Australia. I enjoy building and
-          creating new experiences for users!
+          creating new experiences for users.
         </motion.div>
         <div className="py-2 md:hidden">
           For the full experience, try viewing on the web!
