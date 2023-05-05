@@ -19,7 +19,7 @@ const Hero = ({}: HeroProps) => {
           }}
           className="text-5xl font-bold"
         >
-          Hi! I'm Sandon!
+          Hey! I'm Sandon!
         </motion.div>
         <motion.div
           initial={{ y: -50, opacity: 0 }}
@@ -29,9 +29,10 @@ const Hero = ({}: HeroProps) => {
             duration: 0.5,
             damping: 12,
           }}
-          className="text-2xl font-normal"
+          className="py-2 text-2xl font-normal"
         >
-          I'm a developer from Melbourne, Australia.
+          I'm a developer from Melbourne, Australia. I enjoy building and
+          creating new experiences for users!
         </motion.div>
         <div className="py-2 md:hidden">
           For the full experience, try viewing on the web!

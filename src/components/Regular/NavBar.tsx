@@ -28,7 +28,7 @@ const NavBar = ({}: NavbarProps) => {
             target="_blank"
             className="px-4 transition-colors hover:text-rose-100"
           >
-            Github
+            GitHub
           </a>
           <a
             href="https://www.linkedin.com/in/sandonlai/"
@@ -86,7 +86,7 @@ const NavBar = ({}: NavbarProps) => {
               target="_blank"
               className="p-4 transition-colors hover:text-rose-200"
             >
-              Github
+              GitHub
             </a>
             <a
               href="https://www.linkedin.com/in/sandonlai/"

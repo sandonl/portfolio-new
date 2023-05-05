@@ -2,15 +2,14 @@ export const projects = [
   {
     title: "Munjang",
     description:
-      "A full stack, spaced repetition system (SRS) web application that enables users to learn Korean through daily reviews and user-made flashcards",
+      "A full stack, spaced repetition system (SRS) web app that enables users to learn Korean through daily reviews and user-made flashcards",
     tags: ["React", "Next", "TypeScript", "tRPC", "Tailwind", "Prisma"],
     source: "https://github.com/sandonl/munjang",
     visit: "https://munjanglearn.vercel.app/",
     id: 0,
   },
-
   {
-    title: "Self Care",
+    title: "SelfCare",
     description:
       "An android app that enhances personal self-care and utilises AR technology to engage the user with the outside world",
     tags: ["Kotlin", "Jetpack Compose", "ARCore", "Firebase"],
@@ -19,14 +18,22 @@ export const projects = [
     id: 1,
   },
   {
-    title: "Journey Portal",
-    description:
-      "As part of the Three.js journey with Bruno Simon, a custom scene and model to create a game portal",
-    tags: ["Blender", "Three.js"],
-    source: "https://github.com/sandonl/threejs-portal",
-    visit: "https://threejs-sandonl-portal.vercel.app/",
+    title: "JobFinder",
+    description: "A react native app that lists and searches for jobs",
+    tags: ["React Native", "TypeScript", "Expo-Router"],
+    source: "https://github.com/sandonl/job-listings",
+    visit: "https://github.com/sandonl/job-listings",
     id: 2,
   },
+  // {
+  //   title: "Journey Portal",
+  //   description:
+  //     "As part of the Three.js journey with Bruno Simon, a custom scene and model to create a game portal",
+  //   tags: ["Blender", "Three.js"],
+  //   source: "https://github.com/sandonl/threejs-portal",
+  //   visit: "https://threejs-sandonl-portal.vercel.app/",
+  //   id: 3,
+  // },
   {
     title: "SL Reddit (archived)",
     description:

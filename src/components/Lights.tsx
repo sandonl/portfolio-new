@@ -1,8 +1,3 @@
-import { useHelper } from "@react-three/drei";
-import { useControls } from "leva";
-import { useRef } from "react";
-import { DirectionalLightHelper } from "three";
-
 const Lights = () => {
   // const { topDirectionalLight, directionalLight } = useControls({
   //   // lightPosition: [5, 5, 5],
