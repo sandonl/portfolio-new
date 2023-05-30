@@ -14,7 +14,7 @@ const NavBar = ({}: NavbarProps) => {
         initial={{ y: -20, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ delay: 0.3, duration: 0.5, type: "spring", damping: 12 }}
-        className="absolute z-20 box-border flex h-20 w-full items-center justify-between px-3 text-xl text-black md:px-32"
+        className="absolute z-20 box-border flex h-20 w-full items-center justify-between px-3 text-xl text-black md:px-56 2xl:px-96"
       >
         <a
           className="px-6 py-4 font-semibold transition-colors hover:text-rose-100"

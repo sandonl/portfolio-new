@@ -7,7 +7,7 @@ const Hero = ({}: HeroProps) => {
     <>
       <motion.div
         whileHover={{ scale: 1.05 }}
-        className="absolute flex h-screen max-w-xl flex-col justify-center p-12 leading-relaxed md:w-[50vw] md:p-32"
+        className="absolute ml-0 flex h-screen max-w-md flex-col justify-center p-12 leading-relaxed lg:ml-48 2xl:ml-96"
       >
         <motion.div
           initial={{ y: -50, opacity: 0 }}
@@ -19,7 +19,7 @@ const Hero = ({}: HeroProps) => {
           }}
           className="text-5xl font-bold"
         >
-          Hey! I'm Sandon!
+          Hey, I'm Sandon
         </motion.div>
         <motion.div
           initial={{ y: -50, opacity: 0 }}
@@ -31,8 +31,7 @@ const Hero = ({}: HeroProps) => {
           }}
           className="py-2 text-2xl font-normal"
         >
-          I'm a developer from Melbourne, Australia. I enjoy building and
-          creating new experiences for users.
+          I'm a developer currently living in Melbourne, Australia.
         </motion.div>
         <div className="py-2 md:hidden">
           For the full experience, try viewing on the web!

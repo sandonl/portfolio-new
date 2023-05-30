@@ -27,8 +27,8 @@ const ProjectSection = () => {
 
   return (
     <>
-      <div className="z-[30] h-screen px-3 md:px-36">
-        <div className="my-1 h-20 w-full">
+      <div className="z-[30] mx-auto mb-10 max-w-5xl px-3">
+        <div className="mx-auto mt-20 h-16">
           <div className=" text-3xl font-semibold"> Projects </div>
         </div>
         {projects.map((project, id) => (
