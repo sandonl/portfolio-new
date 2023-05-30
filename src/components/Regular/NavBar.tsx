@@ -19,7 +19,7 @@ const NavBar = ({}: NavbarProps) => {
           type: "spring",
           damping: 12,
         }}
-        className="absolute left-0 right-0 z-20 mx-auto box-border flex h-16 w-9/12 items-center border-b border-slate-700 text-xl text-black"
+        className="absolute left-0 right-0 z-20 mx-auto box-border flex h-16 w-8/12 items-center border-b border-slate-700 text-xl text-black"
       >
         <div className="mx-auto max-w-7xl">
           <div className="flex items-center space-x-96">
