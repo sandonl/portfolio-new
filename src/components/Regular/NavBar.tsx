@@ -53,7 +53,7 @@ const NavBar = ({}: NavbarProps) => {
               </a>
             </div>
             <div
-              className="animate-pulse cursor-pointer items-baseline p-4 lg:hidden"
+              className="animate-pulse cursor-pointer items-baseline p-4 md:hidden"
               onClick={toggleHamburger}
             >
               <svg
@@ -81,7 +81,7 @@ const NavBar = ({}: NavbarProps) => {
             animate={{ y: 0, opacity: 1 }}
             exit={{ y: -20, opacity: 0 }}
             transition={{ duration: 0.7, type: "spring", damping: 12 }}
-            className="absolute top-20 z-20 flex w-full flex-col items-center border-slate-100 lg:hidden"
+            className="absolute top-20 z-20 flex w-full flex-col items-center border-slate-100 md:hidden"
           >
             <a
               href="https://github.com/sandonl"
