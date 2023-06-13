@@ -19,12 +19,12 @@ const NavBar = ({}: NavbarProps) => {
           type: "spring",
           damping: 12,
         }}
-        className="absolute left-0 right-0 z-20 mx-auto box-border flex h-16 w-8/12 items-center border-b border-slate-400 text-xl text-black"
+        className="absolute left-0 right-0 z-20 mx-auto box-border flex h-16 w-full items-center text-xl text-black"
       >
-        <div className="mx-auto max-w-7xl">
-          <div className="flex items-center space-x-96">
+        <div className="max-w-8xl mx-auto">
+          <div className="flex h-16 items-center justify-between space-x-48 lg:space-x-80">
             <a
-              className="px-6 py-4 font-semibold transition-colors hover:text-slate-100"
+              className="whitespace-nowrap px-6 py-4 font-semibold transition-colors hover:text-slate-100"
               href="/"
             >
               Sandon Lai
@@ -53,7 +53,7 @@ const NavBar = ({}: NavbarProps) => {
               </a>
             </div>
             <div
-              className="animate-pulse cursor-pointer p-4 lg:hidden"
+              className="animate-pulse cursor-pointer items-baseline p-4 lg:hidden"
               onClick={toggleHamburger}
             >
               <svg
@@ -81,33 +81,33 @@ const NavBar = ({}: NavbarProps) => {
             animate={{ y: 0, opacity: 1 }}
             exit={{ y: -20, opacity: 0 }}
             transition={{ duration: 0.7, type: "spring", damping: 12 }}
-            className="absolute top-20 z-20 flex w-full flex-col items-center bg-rose-100 lg:hidden"
+            className="absolute top-20 z-20 flex w-full flex-col items-center border-slate-100 lg:hidden"
           >
             <a
               href="https://github.com/sandonl"
               target="_blank"
-              className="p-4 transition-colors hover:text-rose-200"
+              className="p-4 transition-colors hover:text-slate-100"
             >
               GitHub
             </a>
             <a
               href="https://www.linkedin.com/in/sandonlai/"
               target="_blank"
-              className="p-4 transition-colors hover:text-rose-200"
+              className="p-4 transition-colors hover:text-slate-100"
             >
               LinkedIn
             </a>
             <a
               href="mailto:sandonnlai@gmail.com"
               target="_blank"
-              className="p-4 transition-colors hover:text-rose-200"
+              className="p-4 transition-colors hover:text-slate-100"
             >
               Email
             </a>
             <a
               href="https://twitter.com/snads_build"
               target="_blank"
-              className="p-4 transition-colors hover:text-rose-200"
+              className="p-4 transition-colors hover:text-slate-100"
             >
               Twitter
             </a>
