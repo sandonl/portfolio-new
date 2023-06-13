@@ -24,7 +24,7 @@ const NavBar = ({}: NavbarProps) => {
         <div className="mx-auto max-w-7xl">
           <div className="flex items-center space-x-96">
             <a
-              className="px-6 py-4 font-semibold transition-colors hover:text-rose-100"
+              className="px-6 py-4 font-semibold transition-colors hover:text-slate-100"
               href="/"
             >
               Sandon Lai
@@ -33,21 +33,21 @@ const NavBar = ({}: NavbarProps) => {
               <a
                 href="https://github.com/sandonl"
                 target="_blank"
-                className="px-4 transition-colors hover:text-rose-100"
+                className="px-4 transition-colors hover:text-slate-100"
               >
                 GitHub
               </a>
               <a
                 href="https://www.linkedin.com/in/sandonlai/"
                 target="_blank"
-                className="px-4 transition-colors hover:text-rose-100"
+                className="px-4 transition-colors hover:text-slate-100"
               >
                 LinkedIn
               </a>
               <a
                 href="mailto:sandonnlai@gmail.com"
                 target="_blank"
-                className="px-4 transition-colors hover:text-rose-100"
+                className="px-4 transition-colors hover:text-slate-100"
               >
                 Email
               </a>

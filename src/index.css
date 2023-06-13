@@ -8,7 +8,7 @@
 }
 @layer base {
   body {
-    @apply bg-rose-200;
+    @apply bg-slate-300;
     font-family: "Clash Display", sans-serif;
     cursor: url("assets/cursor.png") 15 15, auto;
   }
